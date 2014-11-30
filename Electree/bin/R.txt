@@ -234,6 +234,7 @@ int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable ic_launcher 0x7f020057
 int id ButtonSet 0x7f05003d
+int id acc_btn 0x7f050042
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -248,14 +249,10 @@ int id action_mode_close_button 0x7f050024
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
-int id button1 0x7f05003e
-int id button2 0x7f05003f
-int id button3 0x7f050040
-int id button4 0x7f050041
-int id button5 0x7f050042
 int id checkbox 0x7f05002d
 int id collapseActionView 0x7f05000d
 int id default_activity_button 0x7f050028
+int id device_btn 0x7f050040
 int id dialog 0x7f05000e
 int id disableHome 0x7f050008
 int id dropdown 0x7f05000f
@@ -264,8 +261,10 @@ int id elecTitle 0x7f050043
 int id end 0x7f050013
 int id expand_activities_button 0x7f050026
 int id expanded_menu 0x7f05002c
+int id group_btn 0x7f05003f
 int id home 0x7f050014
 int id homeAsUp 0x7f050005
+int id home_btn 0x7f05003e
 int id icon 0x7f05002a
 int id ifRoom 0x7f05000a
 int id image 0x7f050027
@@ -298,6 +297,7 @@ int id showHome 0x7f050004
 int id showTitle 0x7f050006
 int id signinMainBtn 0x7f050047
 int id split_action_bar 0x7f05001e
+int id stat_btn 0x7f050041
 int id submit_area 0x7f050039
 int id tabMode 0x7f050002
 int id title 0x7f05002b
