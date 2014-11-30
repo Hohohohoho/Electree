@@ -1,2 +1,7 @@
 1417322307590	Rename field 'phoneNumber'
 1417322439740	Rename field 'signinBtn'
+1417324404006	Delete element
+1417324414381	Delete element
+1417325366657	Rename type 'MainActivity'
+1417325377905	Rename resource 'activity_main.xml'
+1417327914332	Rename type 'Fragment_Home'
