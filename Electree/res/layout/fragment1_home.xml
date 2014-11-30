@@ -91,6 +91,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/onoffClick"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -127,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:numColumns="3"
+                android:numColumns="auto_fit"
                 android:stretchMode="columnWidth"
                 android:visibility="gone" >
 

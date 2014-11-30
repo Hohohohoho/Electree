@@ -27,8 +27,6 @@ public class Fragment3_Device extends Fragment {
 		
 		deviceGrid.setAdapter(adapter);
 		
-		
-		
 		return view;
 	}
 }
