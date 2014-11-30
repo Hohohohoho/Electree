@@ -235,6 +235,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int buttonBarStyle=0x7f010017;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int checkable=0x7f01006e;
         /**  Specifies a layout for custom navigation. Overrides navigationMode. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1069,6 +1077,12 @@ containing a value of this type.
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
         public static final int ic_launcher=0x7f020057;
+        public static final int icon_card=0x7f020058;
+        public static final int icon_music=0x7f020059;
+        public static final int icon_pc=0x7f02005a;
+        public static final int icon_sub=0x7f02005b;
+        public static final int icon_tob=0x7f02005c;
+        public static final int settingbox=0x7f02005d;
     }
     public static final class id {
         public static final int ButtonSet=0x7f05003d;
@@ -1089,7 +1103,10 @@ containing a value of this type.
         public static final int beginning=0x7f050011;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
+        public static final int dIcon=0x7f050049;
+        public static final int dName=0x7f05004a;
         public static final int default_activity_button=0x7f050028;
+        public static final int deviceGrid=0x7f05004b;
         public static final int device_btn=0x7f050040;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
@@ -1099,6 +1116,7 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
+        public static final int favor=0x7f050048;
         public static final int group_btn=0x7f05003f;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
@@ -1119,7 +1137,6 @@ containing a value of this type.
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
-        public static final int scrollView1=0x7f050049;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
         public static final int search_button=0x7f050033;
@@ -1139,7 +1156,6 @@ containing a value of this type.
         public static final int stat_btn=0x7f050041;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int textView1=0x7f050048;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
@@ -1198,12 +1214,13 @@ containing a value of this type.
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
         public static final int activity_start=0x7f030019;
-        public static final int fragment1_home=0x7f03001a;
-        public static final int fragment2_group=0x7f03001b;
-        public static final int fragment3_device=0x7f03001c;
-        public static final int fragment4_statics=0x7f03001d;
-        public static final int fragment5_account=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int custom_grid_device=0x7f03001a;
+        public static final int fragment1_home=0x7f03001b;
+        public static final int fragment2_group=0x7f03001c;
+        public static final int fragment3_device=0x7f03001d;
+        public static final int fragment4_statics=0x7f03001e;
+        public static final int fragment5_account=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -2169,6 +2186,33 @@ containing a value of this type.
           @attr name com.sgen.electree:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
+        /** Attributes that can be used with a CheckableRelativeLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CheckableRelativeLayout_checkable com.sgen.electree:checkable}</code></td><td></td></tr>
+           </table>
+           @see #CheckableRelativeLayout_checkable
+         */
+        public static final int[] CheckableRelativeLayout = {
+            0x7f01006e
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.sgen.electree.R.attr#checkable}
+          attribute's value can be found in the {@link #CheckableRelativeLayout} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.sgen.electree:checkable
+        */
+        public static final int CheckableRelativeLayout_checkable = 0;
         /** Attributes that can be used with a CompatTextView.
            <p>Includes the following attributes:</p>
            <table>
