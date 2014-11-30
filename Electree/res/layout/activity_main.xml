@@ -29,12 +29,12 @@
             android:src="@android:drawable/presence_online" />
 
         <EditText
-            android:id="@+id/phoneNumber"
+            android:id="@+id/loginPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="20dp"
-            android:inputType="phone" >
+            android:text="Phone Number" >
 
             <requestFocus />
         </EditText>
@@ -53,7 +53,7 @@
                 android:textSize="15sp" />
 
             <Button
-                android:id="@+id/signinBtn"
+                android:id="@+id/signinMainBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
