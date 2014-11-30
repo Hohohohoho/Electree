@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
     tools:context="${relativePackage}.${activityClass}" >
 
     <LinearLayout
@@ -10,51 +11,56 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/welcomeText"
+            android:id="@+id/elecTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="WELCOME"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:layout_marginBottom="20dp"
+            android:text="ELECTREE"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40sp" />
 
-        <TextView
-            android:id="@+id/signinText"
+        <ImageView
+            android:id="@+id/mainIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIGN IN"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@android:drawable/presence_online" />
 
         <EditText
-            android:id="@+id/signinPhone"
+            android:id="@+id/loginPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Phone Number" />
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Phone Number" >
+
+            <requestFocus />
+        </EditText>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <EditText
-                android:id="@+id/serialNum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="인증번호" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
 
             <Button
-                android:id="@+id/sendBtn"
-                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/loginBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="전송" />
+                android:text="LOG IN"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/signinMainBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SIGN IN"
+                android:textSize="15sp" />
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/signinBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="가입하기" />
 
     </LinearLayout>
 
