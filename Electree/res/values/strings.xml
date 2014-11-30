@@ -5,5 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_sign_in">SignInActivity</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_make_group">MakeGroupActivity</string>
+    <string name="title_activity_new_group_result">NewGroupResultActivity</string>
 
 </resources>

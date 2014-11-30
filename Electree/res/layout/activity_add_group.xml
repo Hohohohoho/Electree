@@ -13,6 +13,7 @@
             android:id="@+id/addGroupTitle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
             android:text="NEW GROUP 등록"
             android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -31,18 +32,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:minHeight="150dp"
-                android:minWidth="150dp"
+                android:minHeight="170dp"
+                android:minWidth="170dp"
                 android:src="@android:drawable/ic_menu_search" />
 
             <EditText
                 android:id="@+id/groupIDText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:ems="10"
                 android:hint="Group ID" >
 
@@ -53,10 +54,10 @@
                 android:id="@+id/groupPWText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:ems="10"
                 android:hint="Group PW"
                 android:inputType="textPassword" />
