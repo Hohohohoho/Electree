@@ -1092,6 +1092,7 @@ containing a value of this type.
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
         public static final int edit_query=0x7f050030;
+        public static final int elecTitle=0x7f05003c;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
@@ -1102,10 +1103,13 @@ containing a value of this type.
         public static final int image=0x7f050027;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
+        public static final int loginBtn=0x7f05003f;
+        public static final int mainIcon=0x7f05003d;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
+        public static final int phoneNumber=0x7f05003e;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
@@ -1123,6 +1127,7 @@ containing a value of this type.
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
+        public static final int signinBtn=0x7f050040;
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
