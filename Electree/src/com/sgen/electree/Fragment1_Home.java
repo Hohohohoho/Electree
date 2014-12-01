@@ -8,14 +8,16 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.sgen.electree.adapter.DeviceAdapter;
 
-public class Fragment1_Home extends Fragment{
+public class Fragment1_Home extends Fragment {
 	private GridView onoffGrid;
+	private GridView favorGrid;
 	private DeviceAdapter adapter;
 	private boolean onoffVisible = false;
-	private LinearLayout onoffclick;
+	private boolean favorVisible = false;
 	
 	public Fragment1_Home() {
 		// TODO Auto-generated constructor stub
@@ -24,9 +26,12 @@ public class Fragment1_Home extends Fragment{
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment1_home, container, false);
-		onoffGrid = (GridView)view.findViewById(R.id.onoffGrid);
+		LinearLayout onoffclick = (LinearLayout)view.findViewById(R.id.onoffClick);
+		TextView favorClick = (TextView)view.findViewById(R.id.favoriteLabel);
 		
-		onoffclick = (LinearLayout)view.findViewById(R.id.onoffClick);
+		onoffGrid = (GridView)view.findViewById(R.id.onoffGrid);
+		favorGrid = (GridView)view.findViewById(R.id.favoriteGrid);
+		
 		onoffclick.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -40,9 +45,24 @@ public class Fragment1_Home extends Fragment{
 			}
 		});
 		
+		favorClick.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				if (favorVisible) {
+					favorVisible = false;
+					favorGrid.setVisibility(View.GONE);
+				} else {
+					favorVisible = true;
+					favorGrid.setVisibility(View.VISIBLE);
+				}
+			}
+		}); 
+		
+		
 		adapter = new DeviceAdapter(getActivity(), getActivity().getBaseContext());
 		
 		onoffGrid.setAdapter(adapter);
+		favorGrid.setAdapter(adapter);
 		return view;
 	}
 }

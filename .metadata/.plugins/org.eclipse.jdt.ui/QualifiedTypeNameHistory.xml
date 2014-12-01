@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.sgen.electree.StartActivity"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.sgen.electree.newgroup.AddGroupActivity"/>
+<fullyQualifiedTypeName name="com.sgen.electree.NewGroupResultActivity"/>
+<fullyQualifiedTypeName name="com.sgen.electree.newgroup.MakeGroupActivity"/>
+<fullyQualifiedTypeName name="com.sgen.electree.newgroup.NewGroupResultActivity"/>
+<fullyQualifiedTypeName name="com.sgen.electree.MainActivity"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout"/>
+<fullyQualifiedTypeName name="com.sgen.electree.R.layout"/>
+<fullyQualifiedTypeName name="com.sgen.electree.ExpandableHeightGridView"/>
+</qualifiedTypeNameHistroy>

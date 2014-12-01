@@ -1,0 +1,31 @@
+package com.sgen.electree;
+
+import com.sgen.electree.adapter.DeviceAdapter;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.GridView;
+
+public class Fragment1_Home extends Fragment{
+	private GridView onoffGrid;
+	private DeviceAdapter adapter;
+	public Fragment1_Home() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		View view = inflater.inflate(R.layout.fragment1_home, container, false);
+		onoffGrid = (GridView)view.findViewById(R.id.onoffGrid);
+		
+		adapter = new DeviceAdapter(getActivity(), getActivity().getBaseContext());
+		
+		onoffGrid.setAdapter(adapter);
+		
+		return view;
+	}
+}
+

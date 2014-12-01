@@ -5,3 +5,25 @@
 1417325366657	Rename type 'MainActivity'
 1417325377905	Rename resource 'activity_main.xml'
 1417327914332	Rename type 'Fragment_Home'
+1417331640043	Rename field 'button1'
+1417332192484	Rename field 'addGroupTitle'
+1417333858087	Rename field 'textView1'
+1417333873960	Rename field 'textView6'
+1417333896502	Rename field 'textView2'
+1417333923926	Rename field 'textView3'
+1417334006301	Rename field 'textView5'
+1417334185926	Rename field 'textView7'
+1417334205798	Rename field 'toggleButton1'
+1417335598169	Move compilation unit
+1417341536999	Rename field 'acc_btn'
+1417341547533	Rename field 'newGroupMgr'
+1417341559132	Rename field 'newGroupAdmin'
+1417341591033	Rename field 'makeGroupTitle'
+1417342605723	Move compilation unit
+1417342623741	Delete element
+1417342649433	Delete element
+1417344881515	Rename field 'makeGroupBtn'
+1417344906150	Rename field 'makeGroupTitle'
+1417344980737	Rename field 'makeGroupTitle'
+1417354987219	Delete element
+1417356488466	Delete element

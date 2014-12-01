@@ -1,0 +1,51 @@
+package com.sgen.electree;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.GridView;
+import android.widget.LinearLayout;
+
+import com.sgen.electree.adapter.DeviceAdapter;
+
+public class Fragment1_Home extends Fragment{
+	private GridView onoffGrid;
+	private DeviceAdapter adapter;
+	private boolean onoffVisible = false;
+	private LinearLayout onoffclick;
+	
+	public Fragment1_Home() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		View view = inflater.inflate(R.layout.fragment1_home, container, false);
+		onoffGrid = (GridView)view.findViewById(R.id.onoffGrid);
+		
+		onoffclick = (LinearLayout)view.findViewById(R.id.onoffClick);
+		onoffclick.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				if (onoffVisible) {
+					onoffVisible = false;
+					onoffGrid.setVisibility(View.GONE);
+				} else {
+					onoffVisible = true;
+					onoffGrid.setVisibility(View.VISIBLE);
+				}
+			}
+		});
+		
+		adapter = new DeviceAdapter(getActivity(), getActivity().getBaseContext());
+		
+		onoffGrid.setAdapter(adapter);
+		ExpandableHeightGridView mAppsGrid = (ExpandableHeightGridView)view.findViewById(R.id.onoffGrid);
+		mAppsGrid.setExpanded(true);
+		return view;
+	}
+}
+
